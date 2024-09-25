@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslateblue;
+  font-family: "Raleway", sans-serif;
+  color: orange;
+}
+
+header {
+  background-color: white;
+  padding: 30px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+}
+
+.intro h1 {
+  text-shadow: 1px 2px white;
+}
+
+.intro p {
+  margin: 20px 0;
+}
+
+main {
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p del {
+  color: white;
+  font-weight: bold;
+}
+
+.my-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: orange;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  width: 40%;
+  text-decoration: underline;
+  font-family: "Raleway", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 40%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.intro,
+#myTop5,
+#genres {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+#genres {
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+#genres li {
+  color: black;
+  margin-left: 30px;
+}
+
+#genres a {
+  color: black;
+}
+
+#action {
+  color: white;
+}
+
+#myTop5 del {
+  color: white;
+}
+
+#myTop5 ol li a {
+  color: white;
+}
+
+footer {
+  padding: 30px;
+  background-color: #4d4c7d;
+}
