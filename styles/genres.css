@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslateblue;
+  font-family: "Raleway", sans-serif;
+  color: orange;
+}
+
+header {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 30px;
+}
+
+.logo {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo:hover{
+    background-color: #ff9900;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.bg-banner h1 {
+  text-shadow: 1px 2px #fff;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.my-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+
+.my-buttons button {
+  background-color: orange;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 20px;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.my-buttons button:hover {
+  background-color: #ff9900;
+}
+
+.my-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+.my-cards img {
+  width: 15rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.my-cards img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card-info {
+  padding: 5px;
+}
+
+.card-info a {
+  text-decoration: none;
+  color: orange;
+}
+
+#action,
+#adventure,
+#sci-fi,
+#thriller {
+  text-align: center;
+  padding: 10px;
+}
+
+#action h2,
+#adventure h2,
+#sci-fi h2,
+#thriller h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-shadow: 1px 2px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .bg-banner h1 {
+    font-size: 25px;
+  }
+
+  .my-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .my-buttons button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .my-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+
+  .my-cards img {
+    width: 100%;
+    border-radius: 0;
+    object-fit: contain;
+  }
+
+  #action,
+  #adventure,
+  #sci-fi,
+  #thriller {
+    text-align: left;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  #action h2,
+  #adventure h2,
+  #sci-fi h2,
+  #thriller h2 {
+    font-size: 20px;
+  }
+
+  .card-info {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
