@@ -15,12 +15,20 @@ header {
   padding: 30px;
 }
 
+header h3 {
+  font-size: 2em;
+}
+
 nav ul {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li a {
   color: black;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .intro h1 {
@@ -57,7 +65,6 @@ button {
   border: 0;
   padding: 10px;
   width: 40%;
-  text-decoration: underline;
   font-family: "Raleway", sans-serif;
 }
 
@@ -90,10 +97,12 @@ img {
 #genres li {
   color: black;
   margin-left: 30px;
+  list-style: none;
 }
 
 #genres a {
   color: black;
+  text-decoration: none;
 }
 
 #action {
@@ -108,7 +117,49 @@ img {
   color: white;
 }
 
+#socials {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#socials li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#socials a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-twitter {
+  color: lightblue;
+}
+
+.fa-instagram {
+  color: pink;
+}
+
 footer {
   padding: 30px;
   background-color: #4d4c7d;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-btn img,
+  button {
+    width: 100%;
+  }
 }
