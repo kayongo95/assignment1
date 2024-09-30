@@ -84,6 +84,7 @@ img {
   padding: 30px;
   border-radius: 6px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 #genres li {
